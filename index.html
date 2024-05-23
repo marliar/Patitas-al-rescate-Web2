@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopción de Mascotas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #7c53c3;
+        }
+        .animal-section {
+            margin-bottom: 20px;
+        }
+        .animal {
+            display: flex;
+            justify-content: center; /* Centro los animales */
+            align-items: center;
+            text-align: center; /* Centro también el texto */
+            margin-bottom: 20px;
+        }
+        .animal img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .animal-description {
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .donation {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .donation input[type="text"], .donation input[type="number"] {
+            padding: 10px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #7c53c3;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #5c3279;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PATITAS AL RESCATE</h1>
+        <h1>Adopción de Mascotas</h1>
+
+        <!-- Sección de Animales -->
+        <div class="animal-section">
+            <h2>Animales en Adopción</h2>
+            
+            <!-- Ejemplos de animales -->
+            <div class="animal">
+                <img src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg" alt="Perro">
+                <div class="animal-description">
+                    <h3>Max</h3>
+                    <p>El es un perrito de 4 meses, juguetón y curioso.</p>
+                </div>
+            </div>
+            <div class="animal">
+                <img src="https://static.fundacion-affinity.org/cdn/farfuture/46mZnLhAYw8xwZBGnHdtITnaZqhrx5cvHSN81eUMWzw/mtime:1528830293/sites/default/files/el-gato-necesita-tener-acceso-al-exterior.jpg" alt="Gato">
+                <div class="animal-description">
+                    <h3>Chloe</h3>
+                    <p>Es una gatita de 2 años, dormilona y comelona.</p>
+                </div>
+            </div>
+            <div class="animal">
+                <img src="https://celebrateurbanbirds.org/wp-content/uploads/2012/09/BlueJay_MichaelHogan_HoganBirds.jpeg" alt="Ave">
+                <div class="animal-description">
+                    <h3>Alitas</h3>
+                    <p>Alitas es un pájarito alegre y chiflador, de aprox. 3 años.</p>
+                </div>
+            </div>
+            <div class="animal">
+                <img src="https://www.zoopinto.es/wp-content/uploads/2022/04/cobaya.jpg" alt="Roedor">
+                <div class="animal-description">
+                    <h3>Norman</h3>
+                    <p>Norman es un cuyo bonito y alegre, que tiene 1 año y medio.</p>
+                </div>
+            </div>
+            <div class="animal">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1nQyLaw5A-onEuP-PN97-NbaWap3gnkuFy4XoUm7aXA&s" alt="Pez">
+                <div class="animal-description">
+                    <h3>Nemo</h3>
+                    <p>Nemo tiene 2 años y es muy alegre.</p>
+                </div>
+            </div>
+            <div class="animal">
+                <img src="https://s1.elespanol.com/2022/04/05/actualidad/662693884_223269247_1706x960.jpg" alt="Perro">
+                <div class="animal-description">
+                    <h3>Duke</h3>
+                    <p>Duke ya es mas grande, pues tiene 6 años, pero es igual de alegre y amistoso.</p>
+                </div>
+            </div>
+            <div class="animal">
+                <img src="https://es.mypet.com/wp-content/uploads/sites/23/2021/03/GettyImages-623368750-e1582816063521-1.jpg" alt="Gato">
+                <div class="animal-description">
+                    <h3>Gidget</h3>
+                    <p>Es otra gatita de tan solo 8 meses de edad, es juguetona y cariñosa.</p>
+                </div>
+            </div>
+            <div class="animal">
+                <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/14131924/original.jpg" alt="Ave">
+                <div class="animal-description">
+                    <h3>Tiberius</h3>
+                    <p>Es un cotorrito amistoso, de 4 años, hablador y bailarin.</p>
+                </div>
+            </div>
+            <div class="animal">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT3UU3YAXNuUUzQtlkppEWvo2a6xdOD7OKQm1E5sOJjx_-ynuw2U74yOc0j15MDcpR-wM&usqp=CAU" alt="Roedor">
+                <div class="animal-description">
+                    <h3>Snowball</h3>
+                    <p>Es un hermoso conejito de 2 años, divertido y curioso.</p>
+                </div>
+            </div>
+            <div class="animal">
+                <img src="https://www.dresseldivers.com/wp-content/uploads/parrotfish-facts-adorno-pez-loro.jpg" alt="Pez">
+                <div class="animal-description">
+                    <h3>Dory</h3>
+                    <p>Dory, es una pececita de 1 año y es muy ocurrente bajo el agua.</p>
+                </div>
+            </div>
+            
+            <!-- Puedes añadir más animales según sea necesario -->
+            
+        </div>
+
+        <!-- Formulario de Adopción -->
+        <h2>Formulario de Adopción</h2>
+        <form id="adopcion-form">
+            <label for="nombre-animal">Nombre del Animal Adoptado:</label><br>
+            <input type="text" id="nombre-animal" name="nombre-animal" required><br><br>
+
+            <label for="nombre-adoptante">Nombre del Adoptante:</label><br>
+            <input type="text" id="nombre-adoptante" name="nombre-adoptante" required><br><br>
+
+            <label for="telefono">Número Telefónico:</label><br>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Formato: 123-456-7890" required><br><br>
+
+            <label for="ubicacion">Ubicación:</label><br>
+            <input type="text" id="ubicacion" name="ubicacion" required><br><br>
+
+            <label for="correo">Correo:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
+
+            <button type="submit" class="button">Enviar</button>
+        </form>
+
+        <!-- Tabla de Registros de Adopciones -->
+        <h2>Registros de Adopciones</h2>
+        <table id="registros">
+            <thead>
+                <tr>
+                    <th>Nombre del Animal</th>
+                    <th>Nombre del Adoptante</th>
+                    <th>Número Telefónico</th>
+                    <th>Ubicación</th>
+                    <th>Correo</th>
+                    <th>Fecha de Adopción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se llenarán los registros automáticamente con JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Sección de Donación -->
+        <div class="donation">
+            <h2>¡Ayúdanos a Seguir Ayudando!</h2>
+            <p>Considera hacer una donación para apoyar nuestra causa.</p>
+            <form id="donation-form">
+                <label for="cantidad-donar">Cantidad a Donar:</label>
+                <input type="number" id="cantidad-donar" name="cantidad-donar" min="1" required> <span>MXN</span><br><br>
+                <input type="hidden" id="fecha-donacion" name="fecha-donacion">
+                <button type="submit" class="button">Donar</button>
+            </form>
+            <p>¡Gracias por tu apoyo incondicional!</p>
+        </div>
+
+        <!-- Sección de Registros de Donaciones -->
+        <h2>Registros de Donaciones</h2>
+        <table id="donaciones">
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Fecha y Hora de Donación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se llenarán los registros de donaciones automáticamente con JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Información de la Veterinaria -->
+        <div style="text-align: center; margin-top: 20px;">
+            <h2>Veterinaria Patitas al Rescate</h2>
+            <p>Ubicación: Calle de los Animalitos Felices, 1234, Ciudad PetFriendly</p>
+            <p>Teléfono: 555-123-4567 | Correo: info@patitasalrescate.mx</p>
+        </div>
+
+    </div>
+
+    <!-- Scripts de JavaScript -->
+    <script>
+        // Función para manejar el envío del formulario de adopción
+        document.getElementById('adopcion-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar que se envíe el formulario
+
+            // Obtener los valores del formulario
+            var nombreAnimal = document.getElementById('nombre-animal').value;
+            var nombreAdoptante = document.getElementById('nombre-adoptante').value;
+            var telefono = document.getElementById('telefono').value;
+            var ubicacion = document.getElementById('ubicacion').value;
+            var correo = document.getElementById('correo').value;
+
+            // Generar la fecha actual en formato YYYY-MM-DD HH:MM:SS
+            var today = new Date();
+            var fechaAdopcion = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate() + ' ' + today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+
+            // Insertar una nueva fila en la tabla de registros de adopciones
+            var table = document.getElementById('registros').getElementsByTagName('tbody')[0];
+            var newRow = table.insertRow(table.rows.length);
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+            var cell5 = newRow.insertCell(4);
+            var cell6 = newRow.insertCell(5);
+
+            // Asignar los valores a las celdas de la nueva fila
+            cell1.innerHTML = nombreAnimal;
+            cell2.innerHTML = nombreAdoptante;
+            cell3.innerHTML = telefono;
+            cell4.innerHTML = ubicacion;
+            cell5.innerHTML = correo;
+            cell6.innerHTML = fechaAdopcion;
+
+            // Limpiar el formulario
+            document.getElementById('adopcion-form').reset();
+        });
+
+        // Función para manejar el envío del formulario de donación
+        document.getElementById('donation-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar que se envíe el formulario
+
+            // Obtener los valores del formulario
+            var cantidadDonar = document.getElementById('cantidad-donar').value;
+            var fechaDonacion = new Date().toLocaleString();
+
+            // Insertar una nueva fila en la tabla de registros de donaciones
+            var table = document.getElementById('donaciones').getElementsByTagName('tbody')[0];
+            var newRow = table.insertRow(table.rows.length);
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+
+            // Asignar los valores a las celdas de la nueva fila
+            cell1.innerHTML = 'Donación de ' + cantidadDonar + ' MXN';
+            cell2.innerHTML = fechaDonacion;
+
+            // Limpiar el formulario
+            document.getElementById('donation-form').reset();
+        });
+    </script>
+
+</body>
+</html>
